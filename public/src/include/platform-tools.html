@@ -1,0 +1,147 @@
+    <!-- history / live -->
+    <div class="btn-mid-holder d-none">
+        <div role="group" id="status-map" class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-white">
+                <input type="radio" id="mapStauts01" name="mapStauts" aria-checked="true" checked=""> 히스토리
+            </label>
+            <label class="btn btn-white active">
+                <input type="radio" id="mapStauts02" name="mapStauts" aria-checked="true"> 실시간
+            </label>
+        </div>
+    </div>
+    <!-- mouse pointer -->
+    <div class="pointer-wrap">
+        <div class="mouse-point space-marker" style="left: 44%; top: 36%;">
+            <div class="marker-inner">
+                <div class="marker-icon"><span class="material-icons">location_on</span></div>
+                <div class="marker-name">suntech</div>
+            </div>
+        </div>
+        <div class="mouse-point flexible-poi" style="left: 52%; top: 48%;">
+            <div class="level-cover level-item01">
+                <span class="status">19&deg;/30&deg;</span>
+                <span class="poi-bg"></span>
+            </div>
+        </div>
+        <div class="mouse-point flexible-poi" style="left: 50%; top: 46%;">
+            <div class="level-cover level-item01">
+                <span class="status">19&deg;/30&deg;</span>
+                <span class="poi-bg"></span>
+            </div>
+        </div>
+        <div class="mouse-point flexible-poi" style="left: 49%; top: 44%;">
+            <div class="level-cover level-item01">
+                <span class="status">19&deg;/30&deg;</span>
+                <span class="poi-bg"></span>
+            </div>
+        </div>
+        <div class="mouse-point flexible-poi" style="left: 48%; top: 47%;">
+            <div class="level-cover level-item01">
+                <span class="status">19&deg;/30&deg;</span>
+                <span class="poi-bg"></span>
+            </div>
+        </div>
+        <div class="mouse-point flexible-poi" style="left: 48%; top: 42%;">
+            <div class="level-cover level-item01">
+                <span class="status">19&deg;/30&deg;</span>
+                <span class="poi-bg"></span>
+            </div>
+        </div>
+        <div class="mouse-point flexible-poi" style="left: 38%; top: 49%;">
+            <div class="level-cover level-item01">
+                <span class="status">19&deg;/30&deg;</span>
+                <span class="poi-bg"></span>
+            </div>
+        </div>
+        <div class="mouse-point flexible-poi" style="left: 37%; top: 52%;">
+            <div class="level-cover level-item01">
+                <span class="status">19&deg;/30&deg;</span>
+                <span class="poi-bg"></span>
+            </div>
+        </div>
+        <div class="mouse-point flexible-poi" style="left: 38.5%; top: 51%;">
+            <div class="level-cover level-item01">
+                <span class="status">19&deg;/30&deg;</span>
+                <span class="poi-bg"></span>
+            </div>
+        </div>
+        <div class="mouse-point flexible-poi" style="left: 37%; top: 55%;">
+            <div class="level-cover level-item01">
+                <span class="status">19&deg;/30&deg;</span>
+                <span class="poi-bg"></span>
+            </div>
+        </div>
+        <div class="mouse-point flexible-poi" style="left: 46%; top: 47%;">
+            <div class="level-cover level-item02">
+                <span class="status">25&deg;/30&deg;</span>
+                <span class="poi-bg"></span>
+            </div>
+        </div>
+        <div class="mouse-point flexible-poi" style="left: 51%; top: 47%;">
+            <div class="level-cover level-item03">
+                <span class="status">28&deg;/30&deg;</span>
+                <span class="poi-bg"></span>
+            </div>
+        </div>
+        <div class="mouse-point flexible-poi" style="left: 50.5%; top: 51%;">
+            <div class="level-cover level-item04">
+                <span class="status">32&deg;/30&deg;</span>
+                <span class="poi-bg"></span>
+            </div>
+        </div>
+        <!-- <div class="mouse-point flexible-poi" style="left: 66%; top: 55%;">
+            <div class="level-cover assets fluid">
+                <span class="poi-bg"></span>
+            </div>
+        </div>
+        <div class="mouse-point flexible-poi" style="left: 68%; top: 55%;">
+            <div class="level-cover assets">
+                <span class="poi-bg"></span>
+            </div>
+        </div> -->
+        <!-- <div class="mouse-point flexible-poi" style="left: 70%; top: 55%;">
+            <div class="level-cover assets poi-off">
+                <span class="status">T-999</span>
+                <span class="poi-bg"></span>
+            </div>
+        </div> -->
+    </div>
+    <!-- map zoom/out -->
+    <div class="btn-widget-holder">
+        <ul>
+            <li><button type="button" class="btn btn-white mb-3"><i class="fas fa-globe"></i></button></li>
+            <li><button type="button" class="btn btn-white mb-3"><i class="fas fa-crosshairs"></i></button></li>
+            <li>
+                <div class="btn-group-vertical">
+                    <button type="button" class="btn btn-white"><i class="fas fa-plus"></i></button>
+                    <button type="button" class="btn btn-white"><i class="fas fa-minus"></i></button>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="cd-panel__open">
+        <a href="#n" class="js-cd-panel-trigger" data-panel="main">
+            <span class="material-icons-outlined">query_stats</span>
+            <small>Chart</small>
+        </a>
+    </div>
+
+    <div class="info-bar">
+        <span>38&#176;06&#39;95&#34;N</span>
+        <span>126&#176;14&#39;45&#34;E</span>
+    </div>
+
+    <!-- map container -->
+    <div id="map" style="width:100%;height:100vh;"></div>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=929301b664a35cf1f7bfa0a302efa160"></script>
+    <script>
+        var container = document.getElementById('map');
+        var options = {
+            center: new kakao.maps.LatLng(33.426227516956985, 126.41010638743498),
+            level: 1
+        };
+
+        var map = new kakao.maps.Map(container, options);
+        //var mapTypeControl = new kakao.maps.MapTypeControl();
+        //map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+    </script>
