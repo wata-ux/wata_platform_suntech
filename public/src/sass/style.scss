@@ -2558,7 +2558,7 @@ em.none-list{
             top: 10px;
         }
     }
-    ul.nav{
+    ul.tab-menu{
         display: flex;
         flex-wrap: wrap;
         list-style: none;
@@ -2601,6 +2601,22 @@ em.none-list{
                 margin-left: .5rem;
                 span{
                     font-size: .875rem;
+                }
+            }
+        }
+    }
+    ul.tab-sub-menu{
+        li{
+            margin-right: .75rem;
+            a{
+                background-color: var(--light);
+                border: 1px solid $border-color;
+                border-radius: .25rem;
+                color: #999;
+                &.active{
+                    background-color: $identity;
+                    color: #fff;
+                    border-color: darken($identity, 10%);
                 }
             }
         }
@@ -2717,6 +2733,12 @@ em.none-list{
                     height: 2rem;
                     em{
                         font-size: 1rem;
+                    }
+                    em.text-dark{
+                        &:before{
+                            content: '/';
+                            margin: 0 .75rem;
+                        }
                     }
                 }
                 span{
@@ -3545,10 +3567,6 @@ a.btn-add-cat{
             }
         }
     }
-    &.accordion-table{
-        border-top: 1px solid #333;
-        border-bottom: 1px solid $border-color;
-    }
     a.close{
         padding: .25rem;
         i{
@@ -4238,59 +4256,6 @@ a.btn-add-cat{
             font-weight: 600;
             span{
                 color: $identity;
-            }
-        }
-    }
-}
-.list-table-header{
-    padding: .75rem 1rem .75rem 1.5rem;
-    margin-right: 1.5rem;
-    li{
-        font-weight: bold;
-    }
-}
-.list-table{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    &.list-table-col4{
-        li{
-            text-align: center;
-            &:nth-child(1){
-                text-align: left;
-                width: 10%;
-            }
-            &:nth-child(2){
-                text-align: left;
-                width: 20%;
-            }
-            &:nth-child(3){
-                width: 20%;
-            }
-            &:nth-child(4){
-                width: 50%;
-            }
-        }
-    }
-    &.list-table-col5{
-        li{
-            text-align: center;
-            &:nth-child(1){
-                text-align: left;
-                width: 10%;
-            }
-            &:nth-child(2){
-                text-align: left;
-                width: 25%;
-            }
-            &:nth-child(3){
-                width: 10%;
-            }
-            &:nth-child(4){
-                width: 10%;
-            }
-            &:nth-child(5){
-                width: 35%;
             }
         }
     }
