@@ -96,7 +96,7 @@
     </div> -->
 
 
-<div class="mdk-drawer-layout js-mdk-drawer-layout float-contents">
+<div class="mdk-drawer-layout js-mdk-drawer-layout">
     <!-- Header -->
 <div class="navbar navbar-expand navbar-light" id="default-navbar" data-primary>
     <button class="navbar-toggler w-auto mr-16pt d-block d-lg-none rounded-0" type="button" data-toggle="sidebar">
@@ -499,199 +499,6 @@
         //map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
     </script>
 
-        <div class="cd-panel cd-panel--from-right js-cd-panel-main cd-panel--is-visible">
-            <a href="#0" class="cd-panel__close js-cd-close">Close</a>
-            <div class="cd-panel__container">
-                <div class="cd-panel__content p-4" data-perfect-scrollbar>
-                    <div class="d-flex flex-row align-items-center mb-0 pb-4">
-                        <div class="flex">
-                            <h3 class="d-flex align-items-center mb-0">실시간 모니터링</h3>
-                            <p class="text-50 m-0">2021-07-01 13:00:00 기준</p>
-                        </div>
-                        <div class="flatpickr-wrapper d-none">
-                            <div id="recent_orders_date" data-toggle="flatpickr" data-flatpickr-wrap="true"
-                                data-flatpickr-mode="range" data-flatpickr-alt-format="d/m/Y"
-                                data-flatpickr-date-format="d/m/Y">
-                                <a href="javascript:void(0)" class="d-flex" data-toggle>
-                                    <span class="material-icons-outlined">edit_calendar</span>
-                                </a>
-                                <input class="flatpickr-hidden-input" type="hidden" value="01/01/2021 to 31/12/2021"
-                                    data-input>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion js-accordion accordion--boxed list-group-flush" id="parent">
-                        <div class="accordion__item open">
-                            <a href="#" class="accordion__toggle collapsed" data-toggle="collapse"
-                                data-target="#panel01" data-parent="#parent">
-                                <span class="flex d-flex align-items-center">
-                                    <!-- <span class="material-icons-outlined icon--left">watch_later</span> -->
-                                    현재 재고 및 내역
-                                </span>
-                                <span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span>
-                            </a>
-                            <div class="accordion__menu collapse show" id="panel01">
-                                <div class="accordion__menu-link align-items-center">
-                                    <em class="flex text-dark font-size-24pt">2,354</em>
-                                    <div class="visitor-group">
-                                        <ul class="mb-0">
-                                            <li>입고<span class="text-accent">100</span></li>
-                                            <li>출고<span class="text-primary">400</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="accordion__menu-link">
-                                    <div class="panel-list">
-                                        <a href="dist_pd_history.html" class="d-flex align-items-start">
-                                            <!-- <div class="d-flex">
-                                                <i class="material-icons text-30">archive</i>
-                                            </div> -->
-                                            <div class="mr-3">
-                                                <h6><span
-                                                        class="material-icons font-size-16pt icon--left">arrow_downward</span>입고
-                                                    대기</h6>
-                                                <div class="text-els">제주한라봉&딸기 마카롱 쿠키 듀오(특대/15개입)</div>
-                                                <ul class="mb-2">
-                                                    <li>2021-08-23 15:29:04</li>
-                                                    <li>창고1</li>
-                                                </ul>
-                                                <span class="writer">leo jeong</span>
-                                            </div>
-                                            <div class="quantity">
-                                                <h6>+5</h6>
-                                                <div class="d-flex align-items-center">
-                                                    <div>15</div>
-                                                    <span
-                                                        class="material-icons font-size-16pt text-30">chevron_right</span>
-                                                    <div>100</div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="accordion__menu-link state-up">
-                                    <div class="panel-list">
-                                        <a href="dist_pd_history.html" class="d-flex align-items-start">
-                                            <!-- <div class="d-flex">
-                                                <i class="material-icons text-30">archive</i>
-                                            </div> -->
-                                            <div class="mr-3">
-                                                <h6><span
-                                                        class="material-icons font-size-16pt icon--left">arrow_downward</span>입고
-                                                    완료</h6>
-                                                <div class="text-els">제주 한라봉 수제 쿠키(16개입)</div>
-                                                <ul class="mb-2">
-                                                    <li>2021-08-23 15:29:04</li>
-                                                    <li>창고1</li>
-                                                </ul>
-                                                <span class="writer">leo jeong</span>
-                                            </div>
-                                            <div class="quantity">
-                                                <h6>+100</h6>
-                                                <div class="d-flex align-items-center">
-                                                    <div>15</div>
-                                                    <span
-                                                        class="material-icons font-size-16pt text-30">chevron_right</span>
-                                                    <div>100</div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion__item open">
-                            <a href="#" class="accordion__toggle collapsed" data-toggle="collapse"
-                                data-target="#panel04" data-parent="#parent">
-                                <span class="flex d-flex align-items-center">
-                                    <!-- <span class="material-icons-outlined icon--left">emoji_events</span> -->
-                                    창고 환경 모니터링</span>
-                                <span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span>
-                            </a>
-                            <div class="accordion__menu collapse more-cover ac-item02 show" id="panel04">
-                                <div class="inner">
-                                    <div class="accordion__menu-link">
-                                        <a href="#n" class="d-flex align-items-center w-100">
-                                            <p class="d-flex m-0">창고1</p>
-                                            <span class="d-flex badge badge-accent ml-auto">이상</span>
-                                        </a>
-                                    </div>
-                                    <div class="accordion__menu-link">
-                                        <a href="#n" class="d-flex align-items-center w-100">
-                                            <p class="d-flex m-0">창고2</p>
-                                            <span class="d-flex badge badge-success ml-auto">정상</span>
-                                        </a>
-                                    </div>
-                                    <div class="accordion__menu-link">
-                                        <a href="#n" class="d-flex align-items-center w-100">
-                                            <p class="d-flex m-0">창고3</p>
-                                            <span class="d-flex badge badge-success ml-auto">정상</span>
-                                        </a>
-                                    </div>
-                                    <div class="accordion__menu-link">
-                                        <a href="#n" class="d-flex align-items-center w-100">
-                                            <p class="d-flex m-0">창고4</p>
-                                            <span class="d-flex badge badge-success ml-auto">정상</span>
-                                        </a>
-                                    </div>
-                                    <div class="accordion__menu-link">
-                                        <a href="#n" class="d-flex align-items-center w-100">
-                                            <p class="d-flex m-0">창고5</p>
-                                            <span class="d-flex badge badge-success ml-auto">정상</span>
-                                        </a>
-                                    </div>
-                                    <div class="accordion__menu-link">
-                                        <a href="#n" class="d-flex align-items-center w-100">
-                                            <p class="d-flex m-0">창고6</p>
-                                            <span class="d-flex badge badge-success ml-auto">정상</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-center more-btn-cover">
-                                    <button type="button" class="btn btn-link text-secondary btn-more"></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion__item open">
-                            <a href="#" class="accordion__toggle collapsed" data-toggle="collapse"
-                                data-target="#panel02" data-parent="#parent">
-                                <span class="flex d-flex align-items-center">
-                                    <!-- <span class="material-icons-outlined icon--left">flag</span> -->
-                                    알림
-                                </span>
-                                <span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span>
-                            </a>
-                            <div class="accordion__menu collapse show" id="panel02">
-                                <div class="accordion__menu-link state-up">
-                                    <a href="#n" class="d-flex align-items-center flex-row w-100">
-                                        <span
-                                            class="material-icons-outlined text-accent mr-1 font-size-16pt">info</span>
-                                        <p class="d-flex m-0 text-accent pr-4">[창고1] 입고 대기</p>
-                                        <span class="d-flex text-50 ml-auto">2021.07.05</span>
-                                    </a>
-                                </div>
-                                <div class="accordion__menu-link state-up">
-                                    <a href="#n" class="d-flex align-items-center flex-row w-100">
-                                        <span
-                                            class="material-icons-outlined text-accent mr-1 font-size-16pt">info</span>
-                                        <p class="d-flex m-0 text-accent pr-4">[창고2] 입고 완료</p>
-                                        <span class="d-flex text-50 ml-auto">2021.07.05</span>
-                                    </a>
-                                </div>
-                                <div class="accordion__menu-link state-up">
-                                    <a href="#n" class="d-flex align-items-center flex-row w-100">
-                                        <span
-                                            class="material-icons-outlined text-accent mr-1 font-size-16pt">info</span>
-                                        <p class="d-flex m-0 text-accent pr-4">[창고3] 출고 완료</p>
-                                        <span class="d-flex text-50 ml-auto">2021.07.05</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- cd-panel__content -->
-            </div> 
-        </div> 
     </div>
     <div class="mdk-drawer js-mdk-drawer layout-compact__drawer" id="default-drawer">
         <div class="mdk-drawer__content js-sidebar-mini" data-layout="compact" data-opened>
@@ -726,52 +533,12 @@
 </div>
             <div class="sidebar sidebar-left flex sidebar-secondary" data-perfect-scrollbar>
                 <div class="tab-content">
-                    <div class="tab-pane sm-distribution active" id="sm-distribution">
-                        <!-- 프로젝트 등록 -->
-                        <div class="distribution-inner">
-                            <div class="container-fluid d-flex flex-md-row align-items-center py-4">
-                                <div class="flex d-flex flex-column flex-sm-row align-items-center mb-24pt mb-md-0">
-                                    <div class="mb-24pt mb-sm-0 mr-sm-24pt">
-                                        <h3 class="mb-0">계측검사</h3>
-                                        <p class="text-70 mb-0">계측검사 페이지입니다.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container-fluid">
-                                <ul class="info-panel accident-panel info-link">
-                                    <li>
-                                        <a href="#n">
-                                            <p>제품목록</p>
-                                            <div class="cell">
-                                                <em><i class="material-icons">notes</i></em>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="st_measuring_test.html">
-                                            <p>계측검사</p>
-                                            <div class="cell">
-                                                <em><i class="material-icons">arrow_downward</i></em>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="st_client.html">
-                                            <p>거래처 관리</p>
-                                            <div class="cell">
-                                                <em><i class="material-icons">arrow_upward</i></em>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="st_items.html">
-                                            <p>품목관리</p>
-                                            <div class="cell">
-                                                <em><i class="material-icons">swap_vert</i></em>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
+                    <div class="tab-pane active">
+                        <!-- 등록 완료 -->
+                        <div class="event-inner">
+                            <div class="tit-intro">
+                                <em>등록을 완료했습니다.</em>
+                                <a href="#n" class="btn btn-outline-accent">확인</a>
                             </div>
                         </div>
                     </div>
