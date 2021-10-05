@@ -1,0 +1,76 @@
+@@include('./include/platform-header.html')
+
+<div class="mdk-drawer-layout js-mdk-drawer-layout float-contents">
+    @@include('./include/platform-topbar.html')
+    <div class="mdk-drawer-layout__content page-content">
+        @@include('./include/platform-tools.html')
+        <!-- // END drawer -->
+        <div class="sidebar-depth" data-perfect-scrollbar>
+            <div class="sidebar-depth-wrap">
+            </div>
+        </div>
+    </div>
+    <div class="mdk-drawer js-mdk-drawer layout-compact__drawer" id="default-drawer">
+        <div class="mdk-drawer__content js-sidebar-mini" data-layout="compact" data-opened>
+            @@include('./include/platform-side-menu.html')
+            <div class="sidebar sidebar-left flex sidebar-secondary" data-perfect-scrollbar>
+                <div class="tab-content">
+                    <div class="tab-pane st-measuring active" id="st-measuring">
+                        <div class="container-fluid py-4">
+                            <div class="flex d-flex align-items-center">
+                                <a href="st_measuring_test.html" class="circle-pin pr-2"><i
+                                        class="material-icons">arrow_back</i></a>
+                                <div class="mr-24pt">
+                                    <h3 class="mb-0">계측검사 등록</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="form-group mb-32pt">
+                                <label class="form-label mb-0 text-50 essential" for="">계측명</label>
+                                <input type="text" class="form-line" id="" placeholder="계측명을 입력해주세요.">
+                            </div>
+                            <div class="form-group mb-32pt">
+                                <label class="form-label mb-0 text-50 essential" for="">제품</label>
+                                <select name="category" class="form-line">
+                                    <option value="발전기01">발전기01</option>
+                                    <option value="발전기02">발전기02</option>
+                                    <option value="발전기03">발전기03</option>
+                                </select>
+                            </div>
+                            <div class="form-group mb-32pt">
+                                <label class="form-label mb-0 text-50 essential" for="">규격</label>
+                                <input type="text" class="form-line" id="" placeholder="규격을 입력해주세요.">
+                            </div>
+                            <div class="form-group mb-32pt">
+                                <label class="form-label mb-0 text-50 essential" for="">공인 기관</label>
+                                <input type="text" class="form-line" id="" placeholder="공인 기관을 입력해주세요.">
+                            </div>
+                            <div class="form-group mb-32pt">
+                                <label class="form-label text-50 essential">납품 일자</label>
+                                <input id="flatpickrSample02" type="hidden"
+                                    class="form-control flatpickr-input form-line" data-toggle="flatpickr" value="today">
+                            </div>
+                            <div class="form-group mb-32pt">
+                                <label class="form-label mb-0 text-50 essential" for="">거래처</label>
+                                <select name="category" class="form-line">
+                                    <option value="납품처01">납품처01</option>
+                                    <option value="납품처02">납품처02</option>
+                                    <option value="납품처03">납품처03</option>
+                                </select>
+                            </div>
+                            <div class="my-32pt">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a href="st_measuring_test.html" class="btn btn-outline-secondary mr-8pt">취소하기</a>
+                                    <a href="completion.html" class="btn btn-outline-accent ml-0">추가하기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('./include/platform-footer.html')
