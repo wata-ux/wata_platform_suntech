@@ -32,7 +32,7 @@
                     <!-- 파일 업로드 전 비활성 -->
                     <a href="#n" class="btn btn-rounded btn-outline-dark ml-2 disabled" data-toggle="modal" data-target="#alert01">계측 검사</a>
                     <!-- 파일 업로드 되면 활성 -->
-                    <a href="#n" class="btn btn-rounded btn-outline-dark ml-2" data-toggle="modal" data-target="#alert01">계측 검사</a>
+                    <a href="#n" class="btn btn-rounded btn-outline-dark ml-2 active" data-toggle="modal" data-target="#alert01">계측 검사</a>
                 </div>
 
                 <div class="contents-view">
@@ -71,7 +71,7 @@
                     <div class="tab-cover mb-4">
                         <ul class="nav tab-menu" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#sidebar-menu01">
+                                <a class="nav-link" data-toggle="tab" href="#sidebar-menu01">
                                     <span class="material-icons icon--left">cancel</span>전압 변동 시험
                                 </a>
                             </li>
@@ -81,7 +81,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#sidebar-menu03">
+                                <a class="nav-link active" data-toggle="tab" href="#sidebar-menu03">
                                     <span class="material-icons icon--left">check_circle</span>전압(파형) 왜형율
                                 </a>
                             </li>
@@ -89,7 +89,7 @@
                         </ul>
                     </div>
                     <div class="tab-content">
-                        <div id="sidebar-menu01" class="tab-pane active" role="tabpanel">
+                        <div id="sidebar-menu01" class="tab-pane" role="tabpanel">
                             <div class="list-table-header">
                                 <ul class="list-unstyled list-table list-table-col4 m-0">
                                     <li>회차</li>
@@ -373,7 +373,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="sidebar-menu03" class="tab-pane" role="tabpanel">
+                        <div id="sidebar-menu03" class="tab-pane active" role="tabpanel">
                             <div class="list-table-header">
                                 <ul class="list-unstyled list-table list-table-col5 m-0">
                                     <li>회차</li>
@@ -507,7 +507,6 @@
                             </div>
                         </div>
                     </div>
-
 
                 </div>
             </div>
