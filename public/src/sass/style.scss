@@ -10155,3 +10155,9 @@ xnugget info
     background: url(../images/map.png) no-repeat center center;
     background-size: cover;
 }
+.item-img-cover{
+    max-width: 500px;
+    img{
+        width: 100%;
+    }
+}

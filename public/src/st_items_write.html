@@ -8,165 +8,97 @@
             <button type="button" class="btn btn-white ml-2 map-e">빠른 실행</button>
         </div>
         @@include('./include/platform-tools.html')
-        <div class="cd-panel cd-panel--from-right js-cd-panel-main cd-panel--is-visible">
-            <a href="#0" class="cd-panel__close js-cd-close">Close</a>
-
-            <div class="cd-panel__container">
-                <div class="cd-panel__content p-4" data-perfect-scrollbar>
-                    <div class="d-flex flex-row align-items-center mb-0 pb-4">
-                        <div class="flex">
-                            <h3 class="d-flex align-items-center mb-0">히스토리</h3>
-                            <p class="text-50 m-0">2021-07-01 13:00:00 기준</p>
-                        </div>
-                        <div class="flatpickr-wrapper d-none">
-                            <div id="recent_orders_date" data-toggle="flatpickr" data-flatpickr-wrap="true"
-                                data-flatpickr-mode="range" data-flatpickr-alt-format="d/m/Y"
-                                data-flatpickr-date-format="d/m/Y">
-                                <a href="javascript:void(0)" class="d-flex" data-toggle>
-                                    <span class="material-icons-outlined">edit_calendar</span>
-                                </a>
-                                <input class="flatpickr-hidden-input" type="hidden" value="01/01/2021 to 31/12/2021"
-                                    data-input>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="btn-group mb-3 w-100">
-                        <a href="dist_pd_warehousing.html" class="btn btn-outline-secondary">입고</a>
-                        <a href="dist_pd_release.html" class="btn btn-outline-secondary">출고</a>
-                        <a href="dist_pd_adjust.html" class="btn btn-outline-secondary">조정</a>
-                        <a href="dist_pd_move.html" class="btn btn-outline-secondary">이동</a>
-                    </div>
-                    <div class="accordion js-accordion accordion--boxed list-group-flush" id="parent">
-                        <div class="accordion__item open">
-                            <a href="#" class="accordion__toggle collapsed" data-toggle="collapse"
-                                data-target="#panel02" data-parent="#parent">
-                                <span class="flex d-flex align-items-center">
-                                    <!-- <span class="material-icons-outlined icon--left">watch_later</span> -->
-                                    현재 재고 및 내역
-                                </span>
-                                <span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span>
-                            </a>
-                            <div class="accordion__menu collapse show" id="panel02">
-                                <div class="accordion__menu-link align-items-center">
-                                    <em class="flex text-dark font-size-24pt">2,354</em>
-                                    <div class="visitor-group">
-                                        <ul class="mb-0">
-                                            <li>입고<span class="text-accent">100</span></li>
-                                            <li>출고<span class="text-primary">400</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="accordion__menu-link">
-                                    <div class="panel-list">
-                                        <a href="dist_pd_history.html" class="d-flex align-items-center">
-                                            <!-- <div class="d-flex">
-                                                <i class="material-icons text-30">archive</i>
-                                            </div> -->
-                                            <div class="mr-3">
-                                                <h6><span
-                                                        class="material-icons font-size-16pt icon--left">arrow_downward</span>입고
-                                                    대기</h6>
-                                                <ul>
-                                                    <li>2021-08-23 13:10:45</li>
-                                                    <li>창고1</li>
-                                                </ul>
-                                            </div>
-                                            <div class="quantity">
-                                                <h6>+5</h6>
-                                                <div class="d-flex align-items-center">
-                                                    <div>15</div>
-                                                    <span
-                                                        class="material-icons font-size-16pt text-30">chevron_right</span>
-                                                    <div>100</div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="accordion__menu-link state-up">
-                                    <div class="panel-list">
-                                        <a href="dist_pd_history.html" class="d-flex align-items-center">
-                                            <!-- <div class="d-flex">
-                                                <i class="material-icons text-30">archive</i>
-                                            </div> -->
-                                            <div class="mr-3">
-                                                <h6><span
-                                                        class="material-icons font-size-16pt icon--left">arrow_downward</span>입고
-                                                    완료</h6>
-                                                <ul>
-                                                    <li>2021-08-23 08:50:12</li>
-                                                    <li>창고1</li>
-                                                </ul>
-                                            </div>
-                                            <div class="quantity">
-                                                <h6>+100</h6>
-                                                <div class="d-flex align-items-center">
-                                                    <div>15</div>
-                                                    <span
-                                                        class="material-icons font-size-16pt text-30">chevron_right</span>
-                                                    <div>100</div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="accordion__menu-link state-down">
-                                    <div class="panel-list">
-                                        <a href="dist_pd_history.html" class="d-flex align-items-center">
-                                            <div class="mr-3">
-                                                <h6><span
-                                                        class="material-icons font-size-16pt icon--left">arrow_upward</span>출고
-                                                    완료</h6>
-                                                <ul>
-                                                    <li>2021-08-23 17:06:23</li>
-                                                    <li>창고1</li>
-                                                </ul>
-                                            </div>
-                                            <div class="quantity">
-                                                <h6>-5</h6>
-                                                <div class="d-flex align-items-center">
-                                                    <div>15</div>
-                                                    <span
-                                                        class="material-icons font-size-16pt text-30">chevron_right</span>
-                                                    <div>100</div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="accordion__menu-link state-down">
-                                    <div class="panel-list">
-                                        <a href="dist_pd_history.html" class="d-flex align-items-center">
-                                            <div class="mr-3">
-                                                <h6><span
-                                                        class="material-icons font-size-16pt icon--left">swap_vert</span>조정
-                                                    완료</h6>
-                                                <ul>
-                                                    <li>2021-08-23 15:29:04</li>
-                                                    <li>창고1</li>
-                                                </ul>
-                                            </div>
-                                            <div class="quantity">
-                                                <h6>-23</h6>
-                                                <div class="d-flex align-items-center">
-                                                    <div>15</div>
-                                                    <span
-                                                        class="material-icons font-size-16pt text-30">chevron_right</span>
-                                                    <div>100</div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- cd-panel__content -->
-            </div> <!-- cd-panel__container -->
-        </div> <!-- cd-panel -->
-        <!-- // END drawer -->
-        <div class="sidebar-depth sidebar-float" data-perfect-scrollbar>
+        <div class="sidebar-depth" data-perfect-scrollbar>
             <div class="sidebar-depth-wrap">
+                <div class="contents-view">
+                    <div class="page-separator mt-5">
+                        <div class="page-separator__text">제품 정보</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">모델명</label>
+                                <input type="text" class="form-control" value="SESG-275AL" disabled>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">출력 - 연속</label>
+                                <input type="text" class="form-control" value="250KW">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">출력 - 비상</label>
+                                <input type="text" class="form-control" value="275KVA">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">전압</label>
+                                <input type="text" class="form-control" value="380V"  >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">전류</label>
+                                <input type="text" class="form-control" value="SESG-175AL">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">상수</label>
+                                <input type="text" class="form-control" value="34W">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">극수</label>
+                                <input type="text" class="form-control" value="4P">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">주파수</label>
+                                <input type="text" class="form-control" value="60Hz"  >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">회전수</label>
+                                <input type="text" class="form-control" value="1800RPM">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">역률</label>
+                                <input type="text" class="form-control" value="0.8 Lagging">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">절연계급</label>
+                                <input type="text" class="form-control" value="H Class">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">여자 전압/전류</label>
+                                <input type="text" class="form-control" value="-">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-separator mt-5">
+                        <div class="page-separator__text">제품 사진</div>
+                    </div>
+                    <div class="item-img-cover">
+                        <img src="images/item01.jpg" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -188,23 +120,23 @@
                                 </div>
                             </div>
                             <div class="container-fluid">
-                                <div class="form-group mb-32pt">
-                                    <label class="form-label mb-0 text-50 essential" for="eventName">품목명</label>
-                                    <input type="text" class="form-line" id="eventName" placeholder="제품명을 입력해주세요.">
+                                <div class="form-group mb-32pt over-txt">
+                                    <label class="form-label text-50 essential" for="">모델명</label>
+                                    <input type="text" class="form-line pr-6" value="SESG-275AL">
+                                    <a href="#n" class="btn btn-secondary btn-sm">주소검색</a>
                                 </div>
                                 <div class="form-group mb-32pt">
-                                    <label class="form-label mb-0 text-50 essential" for="eventName">식별자</label>
-                                    <input type="text" class="form-line" id="eventName" placeholder="식별자 입력해주세요.">
+                                    <label class="form-label mb-0 text-50 essential" for="">제조사</label>
+                                    <input type="text" class="form-line" value="썬테크">
                                 </div>
                                 <div class="form-group mb-32pt">
-                                    <label class="form-label mb-0 text-50 essential" for="eventArea">제조사/생산자</label>
-                                    <input type="text" class="form-line" id="eventArea" placeholder="초기 수량을 입력해주세요."
-                                        value="">
+                                    <label for="formFile" class="form-label text-50">제품사진 <small>(권장사이즈 400x400)</small></label>
+                                    <input class="form-control" type="file" id="formFile">
                                 </div>
                                 <div class="my-32pt">
                                     <div class="d-flex align-items-center justify-content-center">
-                                        <a href="st_items.html" class="btn btn-outline-secondary mr-8pt">취소하기</a>
-                                        <a href="completion.html" class="btn btn-outline-accent ml-0">등록하기</a>
+                                        <a href="st_measuring_test.html" class="btn btn-outline-secondary mr-8pt">취소하기</a>
+                                        <a href="completion.html" class="btn btn-outline-accent ml-0">추가하기</a>
                                     </div>
                                 </div>
                             </div>
