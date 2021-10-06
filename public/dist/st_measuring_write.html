@@ -392,15 +392,13 @@
         </a>
     </div>
 
-    <div class="info-bar">
-        <span>38&#176;06&#39;95&#34;N</span>
-        <span>126&#176;14&#39;45&#34;E</span>
-    </div>
 
     <!-- map container -->
-    <div id="map" style="width:100%;height:100vh;"></div>
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=929301b664a35cf1f7bfa0a302efa160"></script>
-    <script>
+    <div id="map" class="map-bg" style="width:100%;height:100vh;">
+        
+    </div>
+    <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=929301b664a35cf1f7bfa0a302efa160"></script> -->
+    <!-- <script>
         var container = document.getElementById('map');
         var options = {
             center: new kakao.maps.LatLng(34.902397221095356, 127.58865173966326),
@@ -410,11 +408,146 @@
         var map = new kakao.maps.Map(container, options);
         //var mapTypeControl = new kakao.maps.MapTypeControl();
         //map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
-    </script>
+    </script> -->
 
         <!-- // END drawer -->
         <div class="sidebar-depth" data-perfect-scrollbar>
             <div class="sidebar-depth-wrap">
+                <div class="contents-view">
+                    <div class="page-separator mt-5">
+                        <div class="page-separator__text">제품 번호</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">제품번호</label>
+                                <input type="text" class="form-control" value="S-210111-1" disabled>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">발전기 No.</label>
+                                <input type="text" class="form-control" value="S-210111-1">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">엔진 No.</label>
+                                <input type="text" class="form-control" value="D1146EACOA086983">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">운전반 No.</label>
+                                <input type="text" class="form-control" value="D00M2650"  >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-separator mt-5">
+                        <div class="page-separator__text">제품 정보</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">모델명</label>
+                                <input type="text" class="form-control" value="SESG-275AL" disabled>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">출력 - 연속</label>
+                                <input type="text" class="form-control" value="250KW">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">출력 - 비상</label>
+                                <input type="text" class="form-control" value="275KVA">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">전압</label>
+                                <input type="text" class="form-control" value="380V"  >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">전류</label>
+                                <input type="text" class="form-control" value="SESG-175AL">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">상수</label>
+                                <input type="text" class="form-control" value="34W">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">극수</label>
+                                <input type="text" class="form-control" value="4P">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">주파수</label>
+                                <input type="text" class="form-control" value="60Hz"  >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">회전수</label>
+                                <input type="text" class="form-control" value="1800RPM">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">역률</label>
+                                <input type="text" class="form-control" value="0.8 Lagging">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">절연계급</label>
+                                <input type="text" class="form-control" value="H Class">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">여자 전압/전류</label>
+                                <input type="text" class="form-control" value="-">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-separator mt-5">
+                        <div class="page-separator__text">납품 정보</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">납품기관</label>
+                                <input type="text" class="form-control" value="전라남도 해남군" disabled>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">납품처</label>
+                                <input type="text" class="form-control" value="해남군 해남읍 해리 355-1" disabled>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential" for="">수요기관</label>
+                                <input type="text" class="form-control" value="전라남도 해남군 - 작은 영화관 및 청소년 복합문화센터" disabled>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -429,7 +562,7 @@
     <div class="flex d-flex flex-column justify-content-start" data-perfect-scrollbar>
         <ul class="nav flex-shrink-0 flex-nowrap flex-column sidebar-menu mb-0 js-sidebar-mini-tabs" role="tablist">
             <li class="sidebar-menu-item" data-title="Statistics" data-placement="right" data-container="body" data-boundary="window">
-                <a class="sidebar-menu-button" href="#n">
+                <a class="sidebar-menu-button" href="dashboard.html">
                     <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons-outlined">dashboard</i>
                     <span class="sidebar-menu-text">대시보드</span>
                 </a>
@@ -443,7 +576,7 @@
             <li class="sidebar-menu-item" data-title="Setting" data-placement="right" data-container="body" data-boundary="window">
                 <a class="sidebar-menu-button" href="#n">
                     <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons-outlined">settings</i>
-                    <span class="sidebar-menu-text">설정</span>
+                    <span class="sidebar-menu-text">데이터<br>관리</span>
                 </a>
             </li>
         </ul>
@@ -463,36 +596,51 @@
                         </div>
                         <div class="container-fluid">
                             <div class="form-group mb-32pt">
-                                <label class="form-label mb-0 text-50 essential" for="">계측명</label>
-                                <input type="text" class="form-line" id="" placeholder="계측명을 입력해주세요.">
+                                <label class="form-label mb-0 text-50 essential" for="">제품번호</label>
+                                <input type="text" class="form-line" value="S-210111-1">
                             </div>
                             <div class="form-group mb-32pt">
-                                <label class="form-label mb-0 text-50 essential" for="">제품</label>
+                                <label class="form-label mb-0 text-50 essential" for="">발전기 모델</label>
                                 <select name="category" class="form-line">
-                                    <option value="발전기01">발전기01</option>
-                                    <option value="발전기02">발전기02</option>
-                                    <option value="발전기03">발전기03</option>
+                                    <option value="SESG-275AL">SESG-275AL</option>
+                                    <option value="SESG-275AL">SESG-275AL</option>
+                                    <option value="SESG-275AL">SESG-275AL</option>
                                 </select>
                             </div>
                             <div class="form-group mb-32pt">
-                                <label class="form-label mb-0 text-50 essential" for="">규격</label>
-                                <input type="text" class="form-line" id="" placeholder="규격을 입력해주세요.">
-                            </div>
-                            <div class="form-group mb-32pt">
-                                <label class="form-label mb-0 text-50 essential" for="">공인 기관</label>
-                                <input type="text" class="form-line" id="" placeholder="공인 기관을 입력해주세요.">
-                            </div>
-                            <div class="form-group mb-32pt">
-                                <label class="form-label text-50 essential">납품 일자</label>
-                                <input id="flatpickrSample02" type="hidden"
-                                    class="form-control flatpickr-input form-line" data-toggle="flatpickr" value="today">
-                            </div>
-                            <div class="form-group mb-32pt">
-                                <label class="form-label mb-0 text-50 essential" for="">거래처</label>
+                                <label class="form-label mb-0 text-50 essential" for="">출력타입</label>
                                 <select name="category" class="form-line">
-                                    <option value="납품처01">납품처01</option>
-                                    <option value="납품처02">납품처02</option>
-                                    <option value="납품처03">납품처03</option>
+                                    <option value="연속 / 비상 선택">연속 / 비상 선택</option>
+                                    <option value="연속 / 비상 선택">연속 / 비상 선택</option>
+                                    <option value="연속 / 비상 선택">연속 / 비상 선택</option>
+                                </select>
+                            </div>
+                            <div class="form-group mb-32pt">
+                                <label class="form-label mb-0 text-50 essential" for="">공인 기관</label>
+                                <input type="text" class="form-line" value="KR">
+                            </div>
+                            <div class="form-group mb-32pt">
+                                <label class="form-label mb-0 text-50 essential" for="">제조일</label>
+                                <select name="category" class="form-line">
+                                    <option value="">2021-09-01</option>
+                                    <option value="">2021-09-01</option>
+                                    <option value="">2021-09-01</option>
+                                </select>
+                            </div>
+                            <div class="form-group mb-32pt">
+                                <label class="form-label mb-0 text-50 essential" for="">납품일</label>
+                                <select name="category" class="form-line">
+                                    <option value="">2021-10-01</option>
+                                    <option value="">2021-10-01</option>
+                                    <option value="">2021-10-01</option>
+                                </select>
+                            </div>
+                            <div class="form-group mb-32pt">
+                                <label class="form-label mb-0 text-50 essential" for="">납품처</label>
+                                <select name="category" class="form-line">
+                                    <option value="">해남군 해남읍 해리 355-1</option>
+                                    <option value="">해남군 해남읍 해리 355-1</option>
+                                    <option value="">해남군 해남읍 해리 355-1</option>
                                 </select>
                             </div>
                             <div class="my-32pt">

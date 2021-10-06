@@ -96,7 +96,7 @@
     </div> -->
 
 
-<div class="mdk-drawer-layout js-mdk-drawer-layout">
+<div class="mdk-drawer-layout js-mdk-drawer-layout float-contents">
     <!-- Header -->
 <div class="navbar navbar-expand navbar-light" id="default-navbar" data-primary>
     <button class="navbar-toggler w-auto mr-16pt d-block d-lg-none rounded-0" type="button" data-toggle="sidebar">
@@ -410,6 +410,144 @@
         //map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
     </script> -->
 
+        <!-- // END drawer -->
+        <div class="sidebar-depth" data-perfect-scrollbar>
+            <div class="sidebar-depth-wrap">
+                <div class="d-flex flex-column flex-sm-row align-items-sm-center mb-3">
+                    <div class="flex title-row">
+                        <div class="d-flex align-items-center">
+                            <h3 class="d-flex align-items-center mb-0 ">S-210112-2 적합 2/3</h3>
+                            <span class="badge badge-mg badge-pill badge-dark ml-2">5회차</span>
+                        </div>
+                        <span class="text-muted text-headings text-uppercase">최근 검사일시 : 2021.09.23 14:00</span>
+                    </div>
+                    <a href="#n" class="btn btn-rounded btn-outline-dark ml-2" data-toggle="modal"
+                        data-target="#alert01">결과 다운로드</a>
+                </div>
+
+                <div class="contents-view">
+                    <div class="page-separator mt-5">
+                        <div class="page-separator__text">전압변동 시험</div>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="list-table-header">
+                            <ul class="list-unstyled list-table list-table-col4 m-0">
+                                <li>회차</li>
+                                <li>계측 일시</li>
+                                <li>측정치(%)</li>
+                                <li>적합(± 2.5% 이내)</li>
+                            </ul>
+                        </div>
+                        <div class="accordion js-accordion list-group-flush list-bg-light accordion-table" id="parent">
+                            <div class="accordion__item open">
+                                <a href="#" class="accordion__toggle" data-toggle="collapse" data-target="#course-toc-1"
+                                    data-parent="#parent">
+                                    <ul class="list-unstyled list-table list-table-col4 m-0">
+                                        <li>5회차</li>
+                                        <li>2021.09.23</li>
+                                        <li>0.53</li>
+                                        <li><span class="text-danger">부적합</span></li>
+                                    </ul>
+                                    <span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span>
+                                </a>
+                                <div class="accordion__menu collapse show" id="course-toc-1">
+                                    <div class="d-flex p-4 border-top-1">
+    
+                                        <!-- 차트 : 이 영역은 차트 삽입후 삭제-->
+                                        <div class="d-flex align-items-center justify-content-center"
+                                            style="font-size: 4rem; font-weight: bolder; padding: 5rem 0; width:100%;">
+                                            chart
+                                        </div>
+                                        <!-- /차트-->
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="page-separator mt-5">
+                        <div class="page-separator__text">주파수 변동 시험</div>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="list-table-header">
+                            <ul class="list-unstyled list-table list-table-col4 m-0">
+                                <li>회차</li>
+                                <li>계측 일시</li>
+                                <li>측정치(%)</li>
+                                <li>적합(± 2.5% 이내)</li>
+                            </ul>
+                        </div>
+                        <div class="accordion js-accordion list-group-flush list-bg-light accordion-table" id="parent2">
+                            <div class="accordion__item open">
+                                <a href="#" class="accordion__toggle" data-toggle="collapse" data-target="#course-toc-2"
+                                    data-parent="#parent2">
+                                    <ul class="list-unstyled list-table list-table-col4 m-0">
+                                        <li>5회차</li>
+                                        <li>2021.09.23</li>
+                                        <li>0.53</li>
+                                        <li><span class="text-danger">부적합</span></li>
+                                    </ul>
+                                    <span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span>
+                                </a>
+                                <div class="accordion__menu collapse show" id="course-toc-2">
+                                    <div class="d-flex p-4 border-top-1">
+    
+                                        <!-- 차트 : 이 영역은 차트 삽입후 삭제-->
+                                        <div class="d-flex align-items-center justify-content-center"
+                                            style="font-size: 4rem; font-weight: bolder; padding: 5rem 0; width:100%;">
+                                            chart
+                                        </div>
+                                        <!-- /차트-->
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="page-separator mt-5">
+                        <div class="page-separator__text">전압(파형) 왜형율</div>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="list-table-header">
+                            <ul class="list-unstyled list-table list-table-col4 m-0">
+                                <li>회차</li>
+                                <li>계측 일시</li>
+                                <li>측정치(%)</li>
+                                <li>적합(± 2.5% 이내)</li>
+                            </ul>
+                        </div>
+                        <div class="accordion js-accordion list-group-flush list-bg-light accordion-table" id="parent3">
+                            <div class="accordion__item open">
+                                <a href="#" class="accordion__toggle" data-toggle="collapse" data-target="#course-toc-3"
+                                    data-parent="#parent3">
+                                    <ul class="list-unstyled list-table list-table-col4 m-0">
+                                        <li>5회차</li>
+                                        <li>2021.09.23</li>
+                                        <li>0.53</li>
+                                        <li><span class="text-danger">부적합</span></li>
+                                    </ul>
+                                    <span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span>
+                                </a>
+                                <div class="accordion__menu collapse show" id="course-toc-3">
+                                    <div class="d-flex p-4 border-top-1">
+    
+                                        <!-- 차트 : 이 영역은 차트 삽입후 삭제-->
+                                        <div class="d-flex align-items-center justify-content-center"
+                                            style="font-size: 4rem; font-weight: bolder; padding: 5rem 0; width:100%;">
+                                            chart
+                                        </div>
+                                        <!-- /차트-->
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="mdk-drawer js-mdk-drawer layout-compact__drawer" id="default-drawer">
         <div class="mdk-drawer__content js-sidebar-mini" data-layout="compact" data-opened>
@@ -444,12 +582,91 @@
 </div>
             <div class="sidebar sidebar-left flex sidebar-secondary" data-perfect-scrollbar>
                 <div class="tab-content">
-                    <div class="tab-pane active">
-                        <!-- 등록 완료 -->
-                        <div class="event-inner">
-                            <div class="tit-intro">
-                                <em>등록을 완료했습니다.</em>
-                                <a href="#n" class="btn btn-outline-accent">확인</a>
+                    <div class="tab-pane st-measuring active" id="st-measuring">
+                        <div class="container-fluid py-4">
+                            <div class="flex d-flex align-items-center">
+                                <a href="st_measuring_landing.html" class="circle-pin pr-2"><i
+                                        class="material-icons">arrow_back</i></a>
+                                <div class="mr-24pt">
+                                    <h3 class="mb-0">결과조회</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-opt-box">
+                            <div class="cell select-box">
+                                <select name="category" class="form-control custom-select">
+                                    <option value="">전체</option>
+                                    <option value="">검사장비1</option>
+                                    <option value="">검사장비2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="list-group row-list list-group-flush mb-4">
+                            <div class="list-group-item d-flex">
+                                <a href="#n" class="flex d-flex align-items-center">
+                                    <div class="flex">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <h4 class="card-title">S-210112-2 </h4>
+                                            <span class="badge badge-mg badge-success ml-2">적합</span>
+                                        </div>
+                                        <div class="card-subtitle text-50">
+                                            <small class="mr-2">2021-09-23</small>
+                                            <small class="mr-2">(납)2021-09-30</small>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a href="#" data-toggle="dropdown" data-caret="false" class="text-muted"
+                                            aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a href="#n" class="dropdown-item text-primary">수정</a>
+                                            <a href="#n" class="dropdown-item text-danger">삭제</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="list-group-item d-flex">
+                                <a href="#n" class="flex d-flex align-items-center">
+                                    <div class="flex">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <h4 class="card-title">S-210112-2 </h4>
+                                            <span class="badge badge-mg badge-success ml-2">적합</span>
+                                        </div>
+                                        <div class="card-subtitle text-50">
+                                            <small class="mr-2">2021-09-23</small>
+                                            <small class="mr-2">(납)2021-09-30</small>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a href="#" data-toggle="dropdown" data-caret="false" class="text-muted"
+                                            aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a href="#n" class="dropdown-item text-primary">수정</a>
+                                            <a href="#n" class="dropdown-item text-danger">삭제</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="list-group-item d-flex">
+                                <a href="#n" class="flex d-flex align-items-center">
+                                    <div class="flex">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <h4 class="card-title">S-210112-2 </h4>
+                                            <span class="badge badge-mg badge-success ml-2">적합</span>
+                                        </div>
+                                        <div class="card-subtitle text-50">
+                                            <small class="mr-2">2021-09-23</small>
+                                            <small class="mr-2">(납)2021-09-30</small>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a href="#" data-toggle="dropdown" data-caret="false" class="text-muted"
+                                            aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a href="#n" class="dropdown-item text-primary">수정</a>
+                                            <a href="#n" class="dropdown-item text-danger">삭제</a>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -458,6 +675,35 @@
         </div>
     </div>
 </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="alert01" tabindex="-1" aria-labelledby="measurementLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="measurementLabelLabel">알림</h5>
+            </div>
+
+            <div class="modal-body">
+                <div class="py-4">
+                    <div class="text-center">
+                        <h3>계측 데이터를 검사 중입니다.</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-light" data-dismiss="modal">취소</button> -->
+                <button type="button" class="btn btn-accent" data-dismiss="modal" disabled>확인</button>
+                <!-- 계측검사 종료후 -->
+                <!-- <button type="button" class="btn btn-accent" data-dismiss="modal">확인</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
     <!-- alert -->
     <div class="map-alert-container d-none"> 
