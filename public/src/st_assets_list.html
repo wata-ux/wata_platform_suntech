@@ -1,0 +1,140 @@
+@@include('./include/platform-header.html')
+
+<div class="mdk-drawer-layout js-mdk-drawer-layout float-contents">
+    @@include('./include/platform-topbar.html')
+    <div class="mdk-drawer-layout__content page-content">
+        @@include('./include/platform-tools.html')
+        <!-- // END drawer -->
+        <div class="sidebar-depth" data-perfect-scrollbar>
+            <div class="sidebar-depth-wrap">
+            </div>
+        </div>
+    </div>
+    <div class="mdk-drawer js-mdk-drawer layout-compact__drawer" id="default-drawer">
+        <div class="mdk-drawer__content js-sidebar-mini" data-layout="compact" data-opened>
+            @@include('./include/platform-side-menu.html')
+            <div class="sidebar sidebar-left flex sidebar-secondary" data-perfect-scrollbar>
+                <div class="tab-content">
+                    <div class="tab-pane st-measuring active" id="st-measuring">
+                        <div class="container-fluid py-4">
+                            <div class="flex d-flex align-items-center">
+                                <div class="mr-24pt">
+                                    <h3 class="mb-0">자산관리</h3>
+                                </div>
+                                <a href="st_assets_write.html" class="btn btn-outline-dark ml-auto">자산 등록</a>
+                            </div>
+                        </div>
+                        <div class="list-opt-box">
+                            <div class="cell serach-box">
+                                <input type="text" placeholder="검색어를 입력해주세요.">
+                                <a href="#n" class="btn btn-secondary btn-sm ml-auto">검색</a>
+                            </div>
+                        </div>
+                        <div class="list-opt-box">
+                            <div class="cell select-box">
+                                <select name="category" class="form-control custom-select">
+                                    <option value="">전체</option>
+                                    <option value="">검사장비1</option>
+                                    <option value="">검사장비2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="list-group row-list list-group-flush mb-4">
+                            <div class="list-group-item d-flex">
+                                <a href="#n" class="flex d-flex align-items-center">
+                                    <div class="flex">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <h4 class="card-title">검사장비 1</h4>
+                                        </div>
+                                        <div class="card-subtitle text-50">
+                                            <small class="mr-2">PQube3_1</small>
+                                            <small class="mr-2">검사실 1</small>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a href="#" data-toggle="dropdown" data-caret="false" class="text-muted" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a href="#n" class="dropdown-item text-primary">수정</a>
+                                            <a href="#n" class="dropdown-item text-danger">삭제</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="list-group-item d-flex">
+                                <a href="#n" class="flex d-flex align-items-center">
+                                    <div class="flex">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <h4 class="card-title">검사장비 2</h4>
+                                        </div>
+                                        <div class="card-subtitle text-50">
+                                            <small class="mr-2">PQube3_1</small>
+                                            <small class="mr-2">검사실 1</small>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a href="#" data-toggle="dropdown" data-caret="false" class="text-muted" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a href="#n" class="dropdown-item text-primary">수정</a>
+                                            <a href="#n" class="dropdown-item text-danger">삭제</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="list-group-item d-flex">
+                                <a href="#n" class="flex d-flex align-items-center">
+                                    <div class="flex">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <h4 class="card-title">검사장비 3</h4>
+                                        </div>
+                                        <div class="card-subtitle text-50">
+                                            <small class="mr-2">PQube3_1</small>
+                                            <small class="mr-2">검사실 1</small>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a href="#" data-toggle="dropdown" data-caret="false" class="text-muted" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a href="#n" class="dropdown-item text-primary">수정</a>
+                                            <a href="#n" class="dropdown-item text-danger">삭제</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="alert01" tabindex="-1" aria-labelledby="measurementLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="measurementLabelLabel">알림</h5>
+        </div>
+
+        <div class="modal-body">
+            <div class="py-4">
+                <div class="text-center">
+                    <h3>계측 데이터를 검사 중입니다.</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-light" data-dismiss="modal">취소</button> -->
+            <button type="button" class="btn btn-accent" data-dismiss="modal" disabled>확인</button>
+            <!-- 계측검사 종료후 -->
+            <!-- <button type="button" class="btn btn-accent" data-dismiss="modal">확인</button> -->
+        </div>
+        </div>
+    </div>
+</div>
+
+
+
+@@include('./include/platform-footer.html')
