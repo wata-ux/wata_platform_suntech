@@ -7,6 +7,10 @@
         <!-- // END drawer -->
         <div class="sidebar-depth" data-perfect-scrollbar>
             <div class="sidebar-depth-wrap">
+                <div class="empty-state border-top-0 d-none">
+                    <p class="empty-icon m-0"><span class="material-icons-outlined">fact_check</span></p>
+                    <em class="empty-txt mb-4">검사목록을 선택하세요</em>
+                </div>
                 <div class="d-flex flex-column flex-sm-row align-items-sm-center mb-3">
                     <div class="flex title-row">
                         <div class="d-flex align-items-center">
@@ -15,18 +19,18 @@
                         </div>
                         <span class="text-muted text-headings text-uppercase">최근 검사일시 : 2021.09.23 14:00</span>
                     </div>
-                    <div class="d-flex align-items-center options">
+                    <div class="d-flex align-items-center justify-content-end">
                         <div class="d-flex align-items-center mr-2">
                             <p class="m-0">s-210112-2.csv</p>
                         </div>
-                    </div>
-                    <div class="btn-group">
-                        <a href="#n" class="btn btn-rounded btn-outline-dark dropdown-toggle" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">파일 업로드</a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            <a class="dropdown-item text-primary" href="#n"> 업로드</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item text-danger" href="#n"> 삭제</a>
+                        <div class="btn-group">
+                            <a href="#n" class="btn btn-rounded btn-outline-dark dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">파일 업로드</a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item text-primary" href="#n"> 업로드</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-danger" href="#n"> 삭제</a>
+                            </div>
                         </div>
                     </div>
                     <!-- 파일 업로드 전 비활성 -->
@@ -66,7 +70,6 @@
                             <td>전라남도 해남군-작은 영화관 및 청소년 복합문화센터</td>
                         </tr>
                     </table>
-
 
                     <div class="tab-cover mb-4">
                         <ul class="nav tab-menu" role="tablist">
@@ -525,7 +528,7 @@
                                 <div class="mr-24pt">
                                     <h3 class="mb-0">계측검사</h3>
                                 </div>
-                                <a href="st_measuring_write.html" class="btn btn-outline-dark ml-auto">계측검사 등록</a>
+                                <a href="st_measuring_write.html" class="btn btn-outline-dark ml-auto">추가</a>
                             </div>
                         </div>
                         <div class="list-opt-box">
@@ -543,6 +546,7 @@
                                 </select>
                             </div>
                         </div>
+                        <em class="none-list d-none">검사목록이 없습니다.</em>
                         <div class="list-group row-list list-group-flush mb-4">
                             <div class="list-group-item d-flex">
                                 <a href="#n" class="flex d-flex align-items-center">

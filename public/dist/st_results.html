@@ -422,10 +422,130 @@
                         <span class="text-muted text-headings text-uppercase">최근 검사일시 : 2021.09.23 14:00</span>
                     </div>
                     <a href="#n" class="btn btn-rounded btn-outline-dark ml-2" data-toggle="modal"
-                        data-target="#alert01">결과 다운로드</a>
+                        data-target="#alert01">시험성적서 다운로드</a>
                 </div>
 
                 <div class="contents-view">
+                    <div class="report-title">
+                        <h2>시험성적서</h2>
+                        <p>TEST REPORT</p>
+                    </div>
+                    <div class="report-container">
+                        <table class="table lg-table table-nowrap thead-bg-light">
+                            <tr>
+                                <th>수용가<span class="text-50 font-size-12pt ml-2">CUSTOMER</span></th>
+                                <td>해양경찰청 서해지방해양경찰청 여수해양경찰서(청사)</td>
+                                <th>제작소<span class="text-50 font-size-12pt ml-2">MAKER</span></th>
+                                <td>(주)썬테크 <span class="ml-4">SUNTECH CO. LTD</span></td>
+                            </tr>
+                            <tr>
+                                <th>제조번호<span class="text-50 font-size-12pt ml-2">SER. NO.</span></th>
+                                <td>S-210111-1</td>
+                                <th>제조일<span class="text-50 font-size-12pt ml-2">MFG. DATE</span></th>
+                                <td>2021. 01. 11.</td>
+                            </tr>
+                            <tr>
+                                <th>검사일<span class="text-50 font-size-12pt ml-2">DATE OF TEST</span></th>
+                                <td>2021. 01. 12.</td>
+                                <th></th>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <div class="report-contents">
+                            <h4>사양 SPECIFICATION</h4>
+                            <div class="report-list">
+                                <dl>
+                                    <dt>
+                                        <h5>발전기 모델</h5>
+                                        <p>GEN. MODEL</p>
+                                    </dt>
+                                    <dd>SESG-275AL</dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <h5>출력(얀속/비상)</h5>
+                                        <p>OUT-PUT (CONTINUITY/EMERGENCY)</p>
+                                    </dt>
+                                    <dd>250KW(313KVA) / 275KW(344KVA)</dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <h5>전압</h5>
+                                        <p>VOLTAGE</p>
+                                    </dt>
+                                    <dd>380 V</dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <h5>전류</h5>
+                                        <p>AMPERE</p>
+                                    </dt>
+                                    <dd>522 A</dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <h5>상수</h5>
+                                        <p>NO. OF PHASE</p>
+                                    </dt>
+                                    <dd>3 &Oslash; 4 W</dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <h5>극수</h5>
+                                        <p>POLE</p>
+                                    </dt>
+                                    <dd>4 P</dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <h5>주파수</h5>
+                                        <p>FREQUENCY</p>
+                                    </dt>
+                                    <dd>60 Hz</dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <h5>회전수</h5>
+                                        <p>PEVOLUTION</p>
+                                    </dt>
+                                    <dd>1800 r.p.m</dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <h5>역율</h5>
+                                        <p>POWER FACTOR</p>
+                                    </dt>
+                                    <dd>0.8 (LAGGING)</dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <h5>절연계급</h5>
+                                        <p>INSULATION CLASS</p>
+                                    </dt>
+                                    <dd>H CLASS</dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                        <h5>여자전압 / 전류</h5>
+                                        <p>EX' VOLTAGE / AMPERE</p>
+                                    </dt>
+                                    <dd>-</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="report-footer">
+                            <dl>
+                                <dt>
+                                    <h4>시험결과</h4>
+                                    <p>TEST RESULT</p>
+                                </dt>
+                                <dd>
+                                    <em class="results-pass">합격 <span>ACCEPT'</span></em>
+                                    <!-- <em class="results-failed">불합격 <span>FAILED'</span></em> -->
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
                     <div class="page-separator mt-5">
                         <div class="page-separator__text">전압변동 시험</div>
                     </div>
@@ -590,6 +710,12 @@
                                 <div class="mr-24pt">
                                     <h3 class="mb-0">결과조회</h3>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="list-opt-box">
+                            <div class="cell serach-box">
+                                <input type="text" placeholder="검색어를 입력해주세요.">
+                                <a href="#n" class="btn btn-secondary btn-sm ml-auto">검색</a>
                             </div>
                         </div>
                         <div class="list-opt-box">
