@@ -1,0 +1,59 @@
+@@include('./include/platform-header.html')
+
+<div class="mdk-drawer-layout js-mdk-drawer-layout float-contents">
+    @@include('./include/platform-topbar.html')
+    <div class="mdk-drawer-layout__content page-content">
+        @@include('./include/platform-tools.html')
+        <div class="sidebar-depth" data-perfect-scrollbar>
+            <div class="sidebar-depth-wrap">
+            </div>
+        </div>
+    </div>
+    <div class="mdk-drawer js-mdk-drawer layout-compact__drawer" id="default-drawer">
+        <div class="mdk-drawer__content js-sidebar-mini" data-layout="compact" data-opened>
+            @@include('./include/platform-side-menu.html')
+            <div class="sidebar sidebar-left flex sidebar-secondary" data-perfect-scrollbar>
+                <div class="tab-content">
+                    <div class="tab-pane sm-distribution active" id="sm-distribution">
+                        <!-- 프로젝트 등록 -->
+                        <div class="distribution-inner">
+                            <div class="container-fluid py-4">
+                                <div class="flex d-flex align-items-center">
+                                    <div class="mr-24pt">
+                                        <h3 class="mb-0">납품처 추가</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="form-group mb-32pt">
+                                    <label class="form-label mb-0 text-50 essential" for="">수요기관명</label>
+                                    <input type="text" class="form-line" id="" value="충청북도 진천군">
+                                </div>
+                                <div class="form-group mb-32pt">
+                                    <label class="form-label mb-0 text-50 essential" for="">연락처</label>
+                                    <input type="text" class="form-line" id="" value="01012345678">
+                                </div>
+                                <div class="form-group mb-32pt">
+                                    <label class="form-label mb-0 text-50 essential" for="">납품장소명</label>
+                                    <input type="text" class="form-line" id="" value="코로나 19 백신접종센터">
+                                </div>
+                                <div class="form-group mb-32pt">
+                                    <label class="form-label mb-0 text-50 essential" for="">납품주소</label>
+                                    <input type="text" class="form-line" id="" value="충복 진천군 진천읍 문화로 69-4">
+                                </div>
+                                <div class="my-32pt">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <a href="st_client.html" class="btn btn-outline-secondary mr-8pt">취소하기</a>
+                                        <a href="completion.html" class="btn btn-outline-accent ml-0">추가하기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('./include/platform-footer.html')
