@@ -7,20 +7,6 @@
         <!-- // END drawer -->
         <div class="sidebar-depth" data-perfect-scrollbar>
             <div class="sidebar-depth-wrap">
-                <div class="d-flex align-items-center justify-content-end">
-                    <div class="d-flex align-items-center mr-2">
-                        <p class="m-0">s-210112-2.csv</p>
-                    </div>
-                    <div class="btn-group">
-                        <a href="#n" class="btn btn-rounded btn-outline-dark dropdown-toggle" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">파일 업로드</a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            <a class="dropdown-item text-primary" href="#n"> 업로드</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item text-danger" href="#n"> 삭제</a>
-                        </div>
-                    </div>
-                </div>
                 <div class="contents-view">
                     <div class="page-separator mt-5">
                         <div class="page-separator__text">제품 번호</div>
@@ -63,7 +49,7 @@
                         </div>
                         <div class="col-3">
                             <div class="form-group border-0 mb-0">
-                                <label class="form-label mb-2 text-50 essential" for="">출력 - 연속</label>
+                                <label class="form-label mb-2 text-50 essential" for="">출력 - 상용</label>
                                 <input type="text" class="form-control" value="250KW">
                             </div>
                         </div>
@@ -132,6 +118,17 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="form-group border-0 mb-0">
+                                <label class="form-label mb-2 text-50 essential">계측 데이터 등록</label>
+                                <input type="file" class="form-control">
+                                <small class="d-flex text-50 mt-2">계측 데이터가 담긴 csv 파일을 업로드 해주세요.</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    
                     <div class="page-separator mt-5">
                         <div class="page-separator__text">납품 정보</div>
                     </div>
@@ -194,14 +191,6 @@
                                 </select>
                             </div>
                             <div class="form-group mb-32pt">
-                                <label class="form-label mb-0 text-50 essential" for="">출력타입</label>
-                                <select name="category" class="form-line">
-                                    <option value="연속 / 비상 선택">연속 / 비상 선택</option>
-                                    <option value="연속 / 비상 선택">연속 / 비상 선택</option>
-                                    <option value="연속 / 비상 선택">연속 / 비상 선택</option>
-                                </select>
-                            </div>
-                            <div class="form-group mb-32pt">
                                 <label class="form-label mb-0 text-50 essential" for="">검사자산 선택</label>
                                 <select name="category" class="form-line">
                                     <option value="">검사장비 1</option>
@@ -239,6 +228,7 @@
                             <div class="my-32pt">
                                 <div class="d-flex align-items-center justify-content-center">
                                     <a href="st_measuring_test.html" class="btn btn-outline-secondary mr-8pt">취소하기</a>
+                                    <a href="st_measuring_test.html" class="btn btn-accent">등록하기</a>
                                 </div>
                             </div>
                         </div>
