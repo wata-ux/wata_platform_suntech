@@ -4292,6 +4292,21 @@ a.btn-add-cat{
     display: flex;
     align-items: center;
     width: 100%;
+    &.list-table-col3{
+        li{
+            text-align: center;
+            &:nth-child(1){
+                text-align: left;
+                width: 33.3%;
+            }
+            &:nth-child(2){
+                width: 33.3%;
+            }
+            &:nth-child(3){
+                width: 33.3%;
+            }
+        }
+    }
     &.list-table-col4{
         li{
             text-align: center;
