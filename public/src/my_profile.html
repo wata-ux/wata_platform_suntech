@@ -1,0 +1,143 @@
+@@include('./include/header.html')
+
+<main class="dashboard-main">
+    <nav class="dashboard-nav">
+        <a href="my_profile.html" class="navbar-brand mr-16pt">
+            <img src="images/logo/logo.svg" alt="logo" class="img-fluid" />
+        </a>
+        <div class="top-menu-cover">
+            <div class="top-menu">
+                <a href="login.html" class="menu-item text-primary">Sign in</a>
+            </div>
+        </div>
+    </nav>
+    <div class="dashboard-body">
+        <aside class="side-nav sidebar sidebar-light sidebar-light-dodger-blue sidebar-left">
+            <ul class="sidebar-menu">
+
+                <li class="sidebar-menu-item">
+                    <a class="sidebar-menu-button" href="st_measuring_landing.html">
+                        <span class="material-icons-outlined sidebar-menu-icon sidebar-menu-icon--left">content_paste_search</span>
+                        <span class="sidebar-menu-text">계측 검사</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-menu-item active open">
+                    <a class="sidebar-menu-button" data-toggle="collapse" href="#account_menu">
+                        <span class="material-icons-outlined sidebar-menu-icon sidebar-menu-icon--left">account_circle</span>
+                        계정
+                        <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                    </a>
+                    <ul class="sidebar-submenu collapse sm-indent show" id="account_menu">
+                        <li class="sidebar-menu-item active">
+                            <a class="sidebar-menu-button" href="my_profile.html">
+                                <span class="sidebar-menu-text">프로필</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="my_account.html">
+                                <span class="sidebar-menu-text">보안</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+        <div class="contents" data-perfect-scrollbar>
+            <div class="current-location">
+                <a href="my_profile.html" class="btn-location-home">
+                    <span class="material-icons">home</span>
+                </a>
+                <div class="filter-cell location-depth">
+                    <a href="javascript:void(0)" class="filter-dropdown-toggle location-list">
+                        <strong>계정</strong>
+                    </a>
+                    <div class="filter-item-dropdown" data-perfect-scrollbar>
+                        <a href="my_account.html" class="dropdown-item active">계정</a>
+                    </div>
+                </div>
+                <div class="filter-cell location-depth">
+                    <a href="javascript:void(0)" class="filter-dropdown-toggle location-list">
+                        <strong>프로필</strong>
+                    </a>
+                    <div class="filter-item-dropdown" data-perfect-scrollbar>
+                        <a href="my_profile.html" class="dropdown-item active">프로필</a>
+                        <a href="my_account.html" class="dropdown-item">보안</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contents-section account-wrap">
+                <div class="cell">
+                    <div class="row align-items-start">
+                        <div class="col-md-5">
+                            <div class="avatar-box">
+                                <div class="d-flex flex-column flex-sm-row align-items-sm-center mb-5 sort-wrap">
+                                    <div class="flex title-row">
+                                        <h3 class="mb-0">내프로필</h3>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="avatar avatar-xxxl mb-4">
+                                        <!-- <img src="images/icon/wata_symbol.png" alt="Avatar" class="avatar-img rounded-circle"> -->
+                                        <span class="avatar-title rounded-circle">JY</span>
+                                    </div>
+                                    <p class="text-50 font-size-12pt text-center">권장 이미지 크기는 200x200 픽셀입니다.</p>
+                                    <div class="button-wrapper">
+                                        <label for="avatarUpload" class="btn btn-outline-secondary btn-rounded m-0">Upload File</label>
+                                        <input type="file" name="" id="avatarUpload" class="upload-box" placeholder="Upload File">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="mb-5">
+                                <h5 class="mb-4">기본 정보</h5>
+                                <div class="form-group mb-32pt border-bottom-1">
+                                    <label class="form-label text-50" for="accountEmail">이메일</label>
+                                    <p class="py-2 m-0 font-size-16pt font-weight-bold">jeayong.lee@samsung.com</p>
+                                </div>
+                                <div class="form-group mb-32pt border-bottom-1">
+                                    <label class="form-label text-50" for="accountName">이름</label>
+                                    <p class="py-2 m-0 font-size-16pt font-weight-bold">이재용</p>
+                                </div>
+                            </div>
+                            <div class="mb-5">
+                                <h5 class="mb-4">소속 정보</h5>
+                                <div class="form-group mb-32pt border-bottom-1">
+                                    <label class="form-label text-50" for="accountCompany">회사명</label>
+                                    <p class="py-2 m-0 font-size-16pt font-weight-bold">삼성그룹</p>
+                                </div>
+                                <div class="form-group mb-32pt border-bottom-1">
+                                    <label class="form-label text-50" for="accountName">부서명</label>
+                                    <p class="py-2 m-0 font-size-16pt font-weight-bold">경영</p>
+                                </div>
+                                <div class="form-group mb-32pt border-bottom-1">
+                                    <label class="form-label text-50" for="accountName">유형</label>
+                                    <p class="py-2 m-0 font-size-16pt font-weight-bold">유형</p>
+                                </div>
+                                <div class="form-group mb-32pt border-bottom-1">
+                                    <label class="form-label text-50" for="accountName">규모</label>
+                                    <p class="py-2 m-0 font-size-16pt font-weight-bold">규모</p>
+                                </div>
+                                <div class="form-group mb-32pt border-bottom-1">
+                                    <label class="form-label text-50" for="accountName">분야</label>
+                                    <p class="py-2 m-0 font-size-16pt font-weight-bold">분야</p>
+                                </div>
+                            </div>
+                            <div class="my-32pt">
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <a href="my_profile_modify.html" class="btn btn-accent ml-0">프로필 편집</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+
+@@include('./include/footer.html')
